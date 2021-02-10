@@ -65,9 +65,12 @@ body {
     height: 100%;
     margin: auto;
 }
+/* text block
+-----------------------------------------*/
+
 .text-block {
     text-align: center;
-    margin:100px 0 100px 0; 
+    padding:50px 0 100px 0; 
     color: var(--very-dark-blue);
 }
 .heading {
@@ -85,4 +88,53 @@ body {
     font-size: 1.5rem;
     color: var(--grayish-blue);
     line-height: 2rem;
+}
+/* info cards
+----------------------------------------*/
+.info-cards {
+    margin-bottom: 200px;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(22, 25px);
+}
+.red-box {
+    border-top: 4px solid var(--red);
+    grid-area: 1/2/11/3;
+}
+.cyan-box {
+    border-top: 4px solid var(--cyan);
+    grid-area: 7/1/17/2;
+}
+.orange-box {
+    border-top: 4px solid var(--orange);
+    grid-area: 13/2/23/3;
+}
+.blue-box {
+    border-top: 4px solid var(--blue);
+    grid-area: 7/3/17/4;
+}
+.card {
+    width: 350px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 5px;
+    box-shadow: 5px 10px 10px lightgray, -5px 10px 10px lightgrey;
+    padding: 30px 30px;
+}
+.card-heading {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+.card-description {
+    margin: 20px 0 30px 0;
+    color: var(--grayish-blue);
+    font-size: 0.85rem;
+    line-height: 1.6rem;
+}
+.card-img {
+    align-self: flex-end;
 }
